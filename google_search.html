@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            padding-top: 20px;
+            height: 881px;
+        }
+
+        .head {
+            margin-top: 6px;
+            height: 46px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        .search1 {
+            display: flex;
+            align-items: center;
+            overflow: visible;
+            background: #fff;
+            border: 1px solid black;
+            box-shadow: 0 1px 6px rgba(32, 33, 36, .28);
+            border-radius: 24px;
+        }
+
+        .search2 {
+            display: flex;
+            padding: 5px 4px 0 14px;
+
+
+        }
+
+        .searchimgbox {
+            display: flex;
+            align-items: center;
+            padding-right: 13px;
+            margin-top: -5px;
+            width: 33px;
+            height: 44px;
+        }
+
+        .searchimg {
+            display: block;
+            overflow: hidden;
+            overflow-clip-margin: content-box;
+            height: 20px;
+            line-height: 20px;
+            width: 20px;
+            color: #9aa0a6;
+            display: inline-block;
+            fill: currentColor;
+            position: relative;
+        }
+
+        .searchbox {
+            outline: none;
+            width: 297px;
+            height: 39px;
+            padding-bottom: 4px;
+            border: none;
+            flex: 100%;
+        }
+
+        .mainlogo {
+            width: 272px;
+            height: 92px;
+        }
+
+        .addoptions {
+            display: flex;
+            align-items: center;
+            margin-top: -5px;
+            width: 40px;
+            height: 44px;
+            padding: 0 8px;
+        }
+
+        .keyboard {
+            width: 24px;
+            height: 24px;
+            background: url(//www.gstatic.com/inputtools/images/tia.png) no-repeat center;
+            height: 24px;
+            width: 24px;
+            vertical-align: middle;
+        }
+
+        .gNO89b {
+            background-color: #f8f9fa;
+            border: 1px solid #f8f9fa;
+            border-radius: 4px;
+            color: #3c4043;
+            font-family: Apple SD Gothic Neo, arial, sans-serif;
+            font-size: 14px;
+            margin: 11px 4px;
+            padding: 0 16px;
+            line-height: 27px;
+            height: 36px;
+            min-width: 54px;
+            text-align: center;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .gNO89b:hover {
+            box-shadow: 0 1px 6px rgba(32, 33, 36, .28);
+        }
+
+        .tool1 {
+            height: 58px;
+
+        }
+
+        .ael {
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            color: #5f6368;
+        }
+
+        .toolel {
+            padding: 17px 12px 11px 10px;
+            margin: 0 1px;
+            height: 44px;
+            display: flex;
+            align-items: center;
+        }
+
+        .spase {
+            margin-left: 5px;
+        }
+
+        .svgbox {
+            white-space: nowrap;
+            display: flex;
+            align-items: end;
+        }
+
+        svg {
+            width: 16px;
+            height: 16px;
+        }
+
+        .svgtext {
+            font-size: 14px;
+            color: #5f6368;
+        }
+
+        .tool2 {
+            height: 43px;
+        }
+
+        .main {
+            height: 604.3px;
+            margin-left: 106px;
+        }
+
+        .foot {
+            height: 105px;
+            width: 100%;
+            padding: 12px 0;
+            bottom: 881px;
+            background: #f2f2f2;
+        }
+
+        .etc {
+            color: #70757a;
+            padding-left: 27px;
+            font-family: Apple SD Gothic Neo, arial, sans-serif;
+            font-size: 14px;
+            line-height: 22px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="head">
+            <div style="width: 567px; height: 46px; margin-left: 73px; display: flex; align-items: center;">
+                <div style="padding: 4px 28px 0px 30px; width: 150px; height: 37px;">
+                    <img src="googlelogo_color_92x30dp.png" style="background:none" alt="Google" height="30" width="92"
+                        data-atf="1" data-frt="0">
+                </div>
+                <div style="margin-left: 16px;">
+                </div>
+                <div class="search1">
+                    <div class="search2">
+                        <div style="margin: -7px 0 0; padding-right: 6px;"></div>
+                        <div style=" display: inline-flex;">
+                            <input type="text" class="searchbox">
+                        </div>
+                        <div style="display: flex;justify-content: end; align-items: center;">
+                            <div>
+                                <div
+                                    style="width: 48px; height: 44px; padding: 0 12px; display: flex; align-items: center; margin-top: -5px;">
+                                    <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path
+                                            d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <span
+                                style="border-left: 1px solid #dadce0; height: 65%; margin-top: -5px; padding-right: 2px;">
+                            </span>
+                            <div style="display: flex; align-items: center;margin-top: -5px;">
+                                <span jsname="s1VaRe" style="display: block; border-left: 1px solid #dadce0;
+                                    height: 65%;"></span>
+                            </div>
+                            <div class="addoptions">
+                                <span class="keyboard"></span>
+                            </div>
+                            <div class="addoptions">
+                                <svg focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="#4285f4"
+                                        d="m12 15c1.66 0 3-1.31 3-2.97v-7.02c0-1.66-1.34-3.01-3-3.01s-3 1.34-3 3.01v7.02c0 1.66 1.34 2.97 3 2.97z">
+                                    </path>
+                                    <path fill="#34a853" d="m11 18.08h2v3.92h-2z"></path>
+                                    <path fill="#fbbc05"
+                                        d="m7.05 16.87c-1.27-1.33-2.05-2.83-2.05-4.87h2c0 1.45 0.56 2.42 1.47 3.38v0.32l-1.15 1.18z">
+                                    </path>
+                                    <path fill="#ea4335"
+                                        d="m12 16.93a4.97 5.25 0 0 1 -3.54 -1.55l-1.41 1.49c1.26 1.34 3.02 2.13 4.95 2.13 3.87 0 6.99-2.92 6.99-7h-1.99c0 2.92-2.24 4.93-5 4.93z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div class="addoptions">
+                                <svg style="width: 24px; height: 24px;" focusable="false" viewBox="0 0 192 192"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect fill="none" height="192" width="192"></rect>
+                                    <g>
+                                        <circle fill="#4285f4" cx="96" cy="104.15" r="28"></circle>
+                                        <path fill="#ea4335"
+                                            d="M160,72v40.15V136c0,1.69-0.34,3.29-0.82,4.82v0v0c-1.57,4.92-5.43,8.78-10.35,10.35h0v0 c-1.53,0.49-3.13,0.82-4.82,0.82H66l16,16h50h12c4.42,0,8.63-0.9,12.46-2.51c3.83-1.62,7.28-3.96,10.17-6.86 c1.45-1.45,2.76-3.03,3.91-4.74c2.3-3.4,3.96-7.28,4.81-11.44c0.43-2.08,0.65-4.24,0.65-6.45v-12V96.15V84l-6-19l-10.82,2.18 C159.66,68.71,160,70.31,160,72z">
+                                        </path>
+                                        <path fill="#4285f4"
+                                            d="M32,72c0-1.69,0.34-3.29,0.82-4.82c1.57-4.92,5.43-8.78,10.35-10.35C44.71,56.34,46.31,56,48,56 h96c1.69,0,3.29,0.34,4.82,0.82c0,0,0,0,0,0L149,45l-17-5l-16-16h-13.44H96h-6.56H76L60,40H48c-17.67,0-32,14.33-32,32v12v20l16,16 V72z">
+                                        </path>
+                                        <path fill="#34a853"
+                                            d="M144,40h-12l16.83,16.83c1.23,0.39,2.39,0.93,3.47,1.59c2.16,1.32,3.97,3.13,5.29,5.29 c0.66,1.08,1.2,2.24,1.59,3.47v0L176,84V72C176,54.33,161.67,40,144,40z">
+                                        </path>
+                                        <path fill="#fbbc05"
+                                            d="M48,168h39.89l-16-16H48c-8.82,0-16-7.18-16-16v-23.89l-16-16V136C16,153.67,30.33,168,48,168z">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <button
+                        style="color: buttontext; border: none; background: transparent; width: 44px; height: 44px; padding-right: 13px; display: flex; align-items: center; justify-content: center; "
+                        type="submit" aria-label="검색">
+                        <div style="width: 24px; height: 24px; color: #4285f4;">
+                            <span style="color: #4285f4;">
+                                <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path
+                                        d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z">
+                                    </path>
+                                </svg>
+                            </span>
+                        </div>
+                    </button>
+                </div>
+            </div>
+
+            <div style="width: 100%; height: 100%; display: flex; justify-content: end; align-items: center;">
+                
+
+                <div style="width: 100%px; height: 48px; display: flex; align-items: center; justify-content: end; margin-right: 25px;">
+                    <div style="width: 40px; height: 40px; padding: 8px;" fill="#5f6368">
+                        <svg style="width: 100%; height: 100%;" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path fill="#5f6368" d="M13.85 22.25h-3.7c-.74 0-1.36-.54-1.45-1.27l-.27-1.89c-.27-.14-.53-.29-.79-.46l-1.8.72c-.7.26-1.47-.03-1.81-.65L2.2 15.53c-.35-.66-.2-1.44.36-1.88l1.53-1.19c-.01-.15-.02-.3-.02-.46 0-.15.01-.31.02-.46l-1.52-1.19c-.59-.45-.74-1.26-.37-1.88l1.85-3.19c.34-.62 1.11-.9 1.79-.63l1.81.73c.26-.17.52-.32.78-.46l.27-1.91c.09-.7.71-1.25 1.44-1.25h3.7c.74 0 1.36.54 1.45 1.27l.27 1.89c.27.14.53.29.79.46l1.8-.72c.71-.26 1.48.03 1.82.65l1.84 3.18c.36.66.2 1.44-.36 1.88l-1.52 1.19c.01.15.02.3.02.46s-.01.31-.02.46l1.52 1.19c.56.45.72 1.23.37 1.86l-1.86 3.22c-.34.62-1.11.9-1.8.63l-1.8-.72c-.26.17-.52.32-.78.46l-.27 1.91c-.1.68-.72 1.22-1.46 1.22zm-3.23-2h2.76l.37-2.55.53-.22c.44-.18.88-.44 1.34-.78l.45-.34 2.38.96 1.38-2.4-2.03-1.58.07-.56c.03-.26.06-.51.06-.78s-.03-.53-.06-.78l-.07-.56 2.03-1.58-1.39-2.4-2.39.96-.45-.35c-.42-.32-.87-.58-1.33-.77l-.52-.22-.37-2.55h-2.76l-.37 2.55-.53.21c-.44.19-.88.44-1.34.79l-.45.33-2.38-.95-1.39 2.39 2.03 1.58-.07.56a7 7 0 0 0-.06.79c0 .26.02.53.06.78l.07.56-2.03 1.58 1.38 2.4 2.39-.96.45.35c.43.33.86.58 1.33.77l.53.22.38 2.55z">
+                            </path>
+                            <circle cx="12" cy="12" r="3.5"></circle>
+                        </svg>
+                    </div>
+                    <div
+                        style="width: 48px; height: 48px; padding: 4px; display: flex; align-items: center; justify-content: center;">
+                        <svg style="width: 24px; height: 24px;" focusable="false" viewBox="0 0 24 24">
+                            <path fill
+                                d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div style="margin: 0 8px; border: 1px; padding: 9px 15px; width: 80px; height: 36px; background: #1a73e8; display: flex; justify-content: center; align-items: center;
+                    border: 1px solid transparent; border-radius: 4px;">
+                        <a style="color: white; font: 13px/27px Roboto, Arial, sans-serif; text-decoration: none;"
+                            href="">
+                            <span>로그인</span>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tool1">
+            <div style="width: 758px; height: 58px; display: flex; justify-content: end;">
+                <div style="width: 100%; display: flex;justify-content: start;">
+                    <div style="width: 566px; height: 55px; display: flex; align-items: end; justify-content: end;">
+                        <div class="toolel">
+                            <span class="svgbox">
+                                <svg style="fill: #5f6368;" focusable="false" viewBox="0 0 24 24">
+                                    <path fill="#34a853" d="M10 2v2a6 6 0 0 1 6 6h2a8 8 0 0 0-8-8"></path>
+                                    <path fill="#ea4335" d="M10 4V2a8 8 0 0 0-8 8h2c0-3.3 2.7-6 6-6"></path>
+                                    <path fill="#fbbc04" d="M4 10H2a8 8 0 0 0 8 8v-2c-3.3 0-6-2.69-6-6"></path>
+                                    <path fill="#4285f4"
+                                        d="M22 20.59l-5.69-5.69A7.96 7.96 0 0 0 18 10h-2a6 6 0 0 1-6 6v2c1.85 0 3.52-.64 4.88-1.68l5.69 5.69L22 20.59">
+                                    </path>
+                                </svg>
+                                <span class="svgtext spase">전체</span>
+                            </span>
+                        </div>
+                        <div class="toolel">
+                            <span class="svgbox">
+                                <svg focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path clip-rule="evenodd" fill="none" d="M0 0h24v24H0z"></path>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" fill="#4285F4"
+                                        d="M19 22h-7v-2h7c.55 0 1-.46 1-1V5a1 1 0 0 0-1-.99L12 4V2h7c1.66 0 3 1.36 3 3v14c0 1.65-1.35 3-3 3">
+                                    </path>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" fill="#EA4335"
+                                        d="M12 22H5c-1.64 0-3-1.36-3-3V5c0-1.64 1.36-3 3-3h7v2H5c-.55 0-.99.45-.99 1L4 19c0 .55.45 1 1 1h7v2z">
+                                    </path>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" fill="#34A853"
+                                        d="M14 13l-2.25 2.75L10 14l-4 4h12z"></path>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" fill="#FBBC04"
+                                        d="M10 8c0 1.1-.9 2-2 2s-2-.9-2-2c0-1.09.9-2 2-2s2 .9 2 2"></path>
+                                </svg>
+                                <span class="svgtext spase">이미지</span>
+                            </span>
+                        </div>
+                        <div class="toolel">
+                            <a class="ael" href="" data-hveid="CAsQBQ">
+                                <svg focusable="false" viewBox="0 0 16 16">
+                                    <path fill="#5f6368"
+                                        d="M7.503 0c3.09 0 5.502 2.487 5.502 5.427 0 2.337-1.13 3.694-2.26 5.05-.454.528-.906 1.13-1.358 1.734-.452.603-.754 1.508-.98 1.96-.226.452-.377.829-.904.829-.528 0-.678-.377-.905-.83-.226-.451-.527-1.356-.98-1.959-.452-.603-.904-1.206-1.356-1.734C3.132 9.121 2 7.764 2 5.427 2 2.487 4.412 0 7.503 0zm0 1.364c-2.283 0-4.14 1.822-4.14 4.063 0 1.843.86 2.873 1.946 4.177.468.547.942 1.178 1.4 1.79.34.452.596.99.794 1.444.198-.455.453-.992.793-1.445.459-.61.931-1.242 1.413-1.803 1.074-1.29 1.933-2.32 1.933-4.163 0-2.24-1.858-4.063-4.139-4.063zm0 2.734a1.33 1.33 0 11-.001 2.658 1.33 1.33 0 010-2.658">
+                                    </path>
+                                </svg>
+                                <span class="svgtext spase">지도</span>
+                            </a>
+                        </div>
+                        <div class="toolel" style="width: px;">
+                            <div class="svgbox">
+                                <svg focusable="false" viewBox="0 0 24 24">
+                                    <path fill="#4285f4" d="M10 16.5l6-4.5-6-4.5">
+                                    </path>
+                                    <path fill="#ea4335"
+                                        d="M20 12h2v7.5a2.5 2.5 0 0 1-2.5 2.5H12v-2h7a1 1 0 0 0 1-1v-7">
+                                    </path>
+                                    <path fill="#fbbc04" d="M20 12V5a1 1 0 0 0-1-1h-7V2h7.6A2.4 2.4 0 0 1 22 4.4V12h-2">
+                                    </path>
+                                    <path fill="#34a853"
+                                        d="M12 20v2H5a3 3 0 0 1-3-3V4.4A2.4 2.4 0 0 1 4.4 2H12v2H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h7">
+                                    </path>
+                                </svg>
+                                <span class="svgtext spase">동영상</span>
+                            </div>
+                        </div>
+                        <div class="toolel">
+                            <span class="svgbox">
+                                <a class="ael" href="" data-hveid="CAEQBg">
+                                    <span class="bmaJhd iJddsb" style="height:16px;width:16px"><svg focusable="false"
+                                            viewBox="0 0 24 24">
+                                            <path fill="#5f6368"
+                                                d="M12 11h6v2h-6v-2zm-6 6h12v-2H6v2zm0-4h4V7H6v6zm16-7.22v12.44c0 1.54-1.34 2.78-3 2.78H5c-1.64 0-3-1.25-3-2.78V5.78C2 4.26 3.36 3 5 3h14c1.64 0 3 1.25 3 2.78zM19.99 12V5.78c0-.42-.46-.78-1-.78H5c-.54 0-1 .36-1 .78v12.44c0 .42.46.78 1 .78h14c.54 0 1-.36 1-.78V12zM12 9h6V7h-6v2">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                    <span class="svgtext spase">뉴스</span>
+                                </a>
+                            </span>
+
+                        </div>
+                        <div class="toolel">
+                            <span class="svgbox">
+                                <span class="MbEPDb z1asCe SaPW2b" style="height:16px;line-height:16px;width:16px"><svg
+                                        focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path fill="#5f6368"
+                                            d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z">
+                                        </path>
+                                    </svg>
+                                </span>
+                                <span class="svgtext">더보기</span>
+                            </span>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div style="display: flex; justify-content: flex-end; width: %">
+                    <div
+                        style="width: 52px; display: flex; justify-content: end; align-items: end; margin-bottom: 6px;">
+                        <div style="padding: 4px 11px;">
+                            <span class="svgtext">도구</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="tool2">
+            <div style="width: 652px;">
+                <div
+                    style="height: 43px; display: flex; align-items: center; margin-left: 106px; padding-right: 8px; font-size: 14px; color: #70757a;">
+                    검색결과 약 0개 (0.00초)</div>
+            </div>
+        </div>
+
+        <div class="main">
+            <br>
+            ...와(과) 일치하는 검색결과가 없습니다.<br><br>
+            제안:<br><br>
+            <ul style="padding-left: 22px;">
+                <li>모든 단어의 철자가 정확한지 확인하세요.</li></span>
+                <li>다른 검색어를 사용해 보세요.</li>
+                <li>더 일반적인 검색어를 사용해 보세요.</li>
+                <li>키워드 수를 줄여보세요.</li>
+            </ul>
+
+        </div>
+        <div class="foot">
+            <div style="height: 40px; padding-left: 27px; margin-left: 106px; color: #70757a;;">대한민국</div>
+            <div style="height: 40px; margin-left: 106px;">
+                <a class="etc" href="">도움말</a>
+                <a class="etc" href="">의견 보내기</a>
+                <a class="etc" href="">개인정보처리방침</a>
+                <a class="etc" href="">약관</a>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
