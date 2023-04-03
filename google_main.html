@@ -125,6 +125,7 @@
             width: 100%;
             height: 34px;
             border: none;
+            font-size: 16px;
         }
 
         .mainlogo {
@@ -179,7 +180,7 @@
             position: fixed;
             bottom: 48px;
             padding: 15px 30px;
-            border-bottom: 1px solid #dadce0;
+            border-bottom: 1px solid #F2F2F2;
             font-size: 15px;
             color: #70757a;
         }
@@ -274,7 +275,7 @@
                                     </svg>
                                 </div>
                                 <div class="login">
-                                    <a style="color: white; font: 13px/27px Roboto, Arial, sans-serif; text-decoration: none;" href="">
+                                    <a style="color: white; font: 13px/27px Roboto, Arial, sans-serif; text-decoration: none;" href="http://127.0.0.1:5500/%EA%B3%BC%EC%A0%9C1/google_login.html">
                                     <span>로그인</span>
                                     </a>
                                 </div>
@@ -353,11 +354,8 @@
                     <div class="middlebox2_1">
                         <div style="width: 584px; height: 88px; padding-top: 18px;">
                             <center>
-                                <input class="gNO89b" value="Google 검색" aria-label="Google 검색" name="btnK" role="button"
-                                    tabindex="0" type="submit" data-ved="0ahUKEwia9YOfj_79AhUF7WEKHQjuAH8Q4dUDCBI">
-                                <input class="gNO89b" value="I’m Feeling Lucky" aria-label="I’m Feeling Lucky"
-                                    name="btnI" type="submit" jsaction="trigger.kWlxhc"
-                                    data-ved="0ahUKEwia9YOfj_79AhUF7WEKHQjuAH8Q19QECBM">
+                                <button class="gNO89b" id="searchbtn">Google 검색</button>
+                                <button class="gNO89b">I’m Feeling Lucky</button>
                             </center>
                         </div>
                     </div>
@@ -387,7 +385,24 @@
 
 
     <script>
+        const searchbox = document.querySelector(".searchbox")
+        const searchbtn = document.querySelector("#searchbtn")
+        searchbtn.addEventListener("click", function(e){
+            if(searchbox.value != ""){
+                localStorage.setItem("search_value", searchbox.value)
+                searchbox.value = ""
+                location.href="http://127.0.0.1:5500/%EA%B3%BC%EC%A0%9C1/google_search.html"
+            }
+        })
 
+        searchbox.addEventListener("keydown", function(e){
+            if(e.keyCode == 13 && searchbox.value != ""){
+                localStorage.setItem("search_value", searchbox.value)
+                searchbox.value = ""
+                location.href="http://127.0.0.1:5500/%EA%B3%BC%EC%A0%9C1/google_search.html"
+            }
+        })
+        
     </script>
 </body>
 

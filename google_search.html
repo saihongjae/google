@@ -31,7 +31,7 @@
             align-items: center;
             overflow: visible;
             background: #fff;
-            border: 1px solid black;
+            border: 1px solid transparent;
             box-shadow: 0 1px 6px rgba(32, 33, 36, .28);
             border-radius: 24px;
         }
@@ -188,10 +188,12 @@
 <body>
     <div class="container">
         <div class="head">
-            <div style="width: 567px; height: 46px; margin-left: 73px; display: flex; align-items: center;">
+            <div style=" height: 46px; margin-left: 73px; display: flex; align-items: center;">
                 <div style="padding: 4px 28px 0px 30px; width: 150px; height: 37px;">
-                    <img src="googlelogo_color_92x30dp.png" style="background:none" alt="Google" height="30" width="92"
+                    <a href="http://127.0.0.1:5500/%EA%B3%BC%EC%A0%9C1/google_main.html">
+                        <img src="googlelogo_color_92x30dp.png" style="background:none" alt="Google" height="30" width="92"
                         data-atf="1" data-frt="0">
+                    </a>
                 </div>
                 <div style="margin-left: 16px;">
                 </div>
@@ -262,21 +264,17 @@
                             </div>
                         </div>
                     </div>
-                    <button style="color: buttontext; border: none; background: transparent; width: 44px; height: 44px; padding-right: 13px; display: flex; align-items: center; justify-content: center; "
-                        type="submit" aria-label="검색">
+                    <a href="" id="searchbtn" style="border: none; background: transparent; width: 44px; height: 44px; padding-right: 13px; display: flex; align-items: center; justify-content: center;">
                         <div style="width: 24px; height: 24px;">
                                 <svg style="width: 24px; height: 24px;" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                     <path fill="#4285f4" d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z">
                                     </path>
                                 </svg>
                         </div>
-                    </button>
+                    </a>
                 </div>
             </div>
-
             <div style="width: 100%; height: 100%; display: flex; justify-content: end; align-items: center;">
-                
-
                 <div style="width: 100%px; height: 48px; display: flex; align-items: center; justify-content: end; margin-right: 25px;">
                     <div style="width: 40px; height: 40px; padding: 8px;" fill="#5f6368">
                         <svg style="width: 100%; height: 100%;" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -292,16 +290,16 @@
                             </path>
                         </svg>
                     </div>
-                    <div style="margin: 0 8px; border: 1px; padding: 9px 15px; width: 80px; height: 36px; background: #1a73e8; display: flex; justify-content: center; align-items: center;
+                    <div style="margin: 0 8px; border: 1px;  width: 80px; height: 36px; background: #1a73e8; display: flex; justify-content: center; align-items: center;
                     border: 1px solid transparent; border-radius: 4px;">
-                        <a style="color: white; font: 13px/27px Roboto, Arial, sans-serif; text-decoration: none;"
-                            href="">
-                            <span>로그인</span>
+                        <a href="http://127.0.0.1:5500/%EA%B3%BC%EC%A0%9C1/google_login.html" style="color: white; font: 13px/27px Roboto, Arial, sans-serif; text-decoration: none; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;">
+                            로그인
                         </a>
 
                     </div>
                 </div>
             </div>
+            
         </div>
 
         <div class="tool1">
@@ -398,7 +396,7 @@
                     </div>
                 </div>
 
-                <div style="display: flex; justify-content: flex-end; width: %">
+                <div style="display: flex; justify-content: flex-end;">
                     <div
                         style="width: 52px; display: flex; justify-content: end; align-items: end; margin-bottom: 6px;">
                         <div style="padding: 4px 11px;">
@@ -420,7 +418,7 @@
 
         <div class="main">
             <br>
-            ...와(과) 일치하는 검색결과가 없습니다.<br><br>
+            <em style="font-weight: bold; font-style: normal;"></em>와(과) 일치하는 검색결과가 없습니다.<br><br>
             제안:<br><br>
             <ul style="padding-left: 22px;">
                 <li>모든 단어의 철자가 정확한지 확인하세요.</li></span>
@@ -441,6 +439,32 @@
         </div>
     </div>
     </div>
+    <script>
+        const searchbox = document.querySelector(".searchbox")
+        const srchval = document.querySelector("#srchval")
+        const searchbtn = document.querySelector("#searchbtn")
+
+        let srchvalval = localStorage.getItem(localStorage.key(0))
+        let srchvaltxt = document.createTextNode(srchvalval)
+
+        searchbox.value=localStorage.getItem(localStorage.key(0))
+        document.querySelector("em").appendChild(srchvaltxt)
+        searchbox.addEventListener("keydown", function(e){
+            if(e.keyCode == 13){
+                localStorage.setItem("search_value", searchbox.value)
+                location.reload()
+            }
+        })
+        
+        searchbtn.addEventListener("click", function(e){
+            if(searchbox.value != ""){
+                localStorage.setItem("search_value", searchbox.value)
+                searchbox.value = ""
+                location.href="http://127.0.0.1:5500/%EA%B3%BC%EC%A0%9C1/google_search.html"
+            }
+        })
+        
+    </script>
 </body>
 
 </html>

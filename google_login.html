@@ -62,17 +62,26 @@
             box-shadow: 0 1px 1px 0 rgba(66, 133, 244, .45)
         }
 
-        .inputbox {
+        .id_box {
             width: 100%;
             height: 54px;
             margin: 1px 1px 0;
             padding: 13px 15px;
             border: 0 solid transparent;
+            font-size: 16px;
+            display: block;
             
         }
 
-        .inputbox:focus {
+        .id_box:focus{
             outline: #1A73E8;
+        }
+
+        .inputbox{
+            display: flex;
+            border: 1px solid #dadce0;
+            border-radius: 4px;
+            box-sizing: inherit;
         }
     </style>
 </head>
@@ -114,29 +123,29 @@
                         </g>
                     </svg>
                 </div>
-                <h1 style="padding-top: 16px; text-align: center;">
-                    <span style="color: #202124; font-size: 24px;">로그인</span>
+                <h1 style="padding-top: 16px; display: flex; justify-content: center;">
+                    <span style="color: #202124; font-size: 24px; font-weight: 400; font-family: Google Sans,Noto Sans Myanmar UI,arial,sans-serif;">로그인</span>
                 </h1>
-                <div style="font-size: 16px; padding-top: 7px 0 1px; text-align: center;">
+                <div style="font-size: 16px; padding: 7px 0 1px; text-align: center; height: 32px;">
                     <span>Google 계정 사용</span>
                 </div>
                 <div style="padding-top: 24px;">
-                    <div style="padding-top: 8px;">
-                        <div style="border: 1px solid #dadce0; border-radius: 4px;">
-                            <fieldset>
-                                <input class="inputbox"></input>
-                            </fieldset>
-
+                    <div style="padding-top: 8px; height: 64px;">
+                        <div class="inputbox" style=" box-sizing: inherit;">
+                            <input class="id_box" placeholder="이메일 또는 휴대전화">
+                        </input>
                         </div>
                     </div>
                 </div>
+                    
+                
                 <div style="padding: 9px 0 3px;">
                     <button type="button"
                         style="background-color: white; font-size: 16px; text-decoration: none; border: none; color: #1A73E8; padding: 2px 3px; margin: -2px -3px;">이메일을
                         잊으셨나요?</button>
                 </div>
                 <div style="padding-top: 32px;">
-                    <div style="padding: 9px 0 3px;">
+                    <div style="padding: 9px 0 3px; font-size: 15px; color: #5f6368; line-height: 1.4286;">
                         내 컴퓨터가 아닌가요? 게스트 모드를 사용하여 비공개로 로그인하세요.
                         <button class="findbtn">자세히 알아보기</button>
                     </div>
@@ -144,13 +153,13 @@
                 <div style="margin-top: 32px; padding-bottom: 20px; display: flex;">
                     <div style="width: 50%;">
                         <button type="button"
-                            style="color: #1A73E8; height: 48px; margin: 6px 0; padding: 0 8px; border: none; display: flex; align-items: center; background-color: white;">
+                            style="font-size: 14px; color: #1A73E8; height: 48px; margin: 6px 0; padding: 0 8px; border: none; display: flex; align-items: center; background-color: white;">
                             계정 만들기
                         </button>
                     </div>
                     <div style="width: 50%; display: flex; justify-content: end; align-items: center;">
                         <button class="nextbtn">
-                            <span style="color: #fff;">다음</span>
+                            <span style="color: #fff; font-size: 15px;">다음</span>
                         </button>
                     </div>
                 </div>
