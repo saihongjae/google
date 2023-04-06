@@ -162,6 +162,7 @@
         }
 
         .main {
+            width: 600px;
             height: 604.3px;
             margin-left: 106px;
         }
@@ -182,6 +183,19 @@
             line-height: 22px;
             text-decoration: none;
         }
+
+        #chrome_homepage_move {
+            text-decoration: none;
+            display: inline;
+        }
+
+        #chrome_tag_hover_underline{
+            font-size: 20px;
+            display: flex; height: 
+            30px; margin-top: 4px;
+            margin-left: -40px;
+            text-decoration: none;
+        }
     </style>
 </head>
 
@@ -191,8 +205,8 @@
             <div style=" height: 46px; margin-left: 73px; display: flex; align-items: center;">
                 <div style="padding: 4px 28px 0px 30px; width: 150px; height: 37px;">
                     <a href="http://127.0.0.1:5500/%EA%B3%BC%EC%A0%9C1/google_main.html">
-                        <img src="googlelogo_color_92x30dp.png" style="background:none" alt="Google" height="30" width="92"
-                        data-atf="1" data-frt="0">
+                        <img src="googlelogo_color_92x30dp.png" style="background:none" alt="Google" height="30"
+                            width="92" data-atf="1" data-frt="0">
                     </a>
                 </div>
                 <div style="margin-left: 16px;">
@@ -208,14 +222,17 @@
                             <div>
                                 <div
                                     style="width: 48px; height: 44px; padding: 0 12px; display: flex; align-items: center; margin-top: -5px;">
-                                    <svg style="width: 24px; height: 44px;"  focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path fill="#70757a" d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z">
+                                    <svg style="width: 24px; height: 44px;" focusable="false"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path fill="#70757a"
+                                            d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z">
                                         </path>
                                     </svg>
                                 </div>
                             </div>
 
-                            <span style="border-left: 1px solid #dadce0; height: 65%; margin-top: -5px; padding-right: 2px;">
+                            <span
+                                style="border-left: 1px solid #dadce0; height: 65%; margin-top: -5px; padding-right: 2px;">
                             </span>
 
                             <div style="display: flex; align-items: center;margin-top: -5px;">
@@ -228,7 +245,8 @@
                             </div>
 
                             <div class="addoptions">
-                                <svg style="width: 24px; height: 24px;" focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <svg style="width: 24px; height: 24px;" focusable="false" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
                                     <path fill="#4285f4"
                                         d="m12 15c1.66 0 3-1.31 3-2.97v-7.02c0-1.66-1.34-3.01-3-3.01s-3 1.34-3 3.01v7.02c0 1.66 1.34 2.97 3 2.97z">
                                     </path>
@@ -264,21 +282,27 @@
                             </div>
                         </div>
                     </div>
-                    <a href="" id="searchbtn" style="border: none; background: transparent; width: 44px; height: 44px; padding-right: 13px; display: flex; align-items: center; justify-content: center;">
+                    <a href="javascript:return false;" id="searchbtn"
+                        style="border: none; background: transparent; width: 44px; height: 44px; padding-right: 13px; display: flex; align-items: center; justify-content: center;">
                         <div style="width: 24px; height: 24px;">
-                                <svg style="width: 24px; height: 24px;" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                    <path fill="#4285f4" d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z">
-                                    </path>
-                                </svg>
+                            <svg style="width: 24px; height: 24px;" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24">
+                                <path fill="#4285f4"
+                                    d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z">
+                                </path>
+                            </svg>
                         </div>
                     </a>
                 </div>
             </div>
             <div style="width: 100%; height: 100%; display: flex; justify-content: end; align-items: center;">
-                <div style="width: 100%px; height: 48px; display: flex; align-items: center; justify-content: end; margin-right: 25px;">
+                <div
+                    style="width: 100%px; height: 48px; display: flex; align-items: center; justify-content: end; margin-right: 25px;">
                     <div style="width: 40px; height: 40px; padding: 8px;" fill="#5f6368">
-                        <svg style="width: 100%; height: 100%;" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                            <path fill="#5f6368" d="M13.85 22.25h-3.7c-.74 0-1.36-.54-1.45-1.27l-.27-1.89c-.27-.14-.53-.29-.79-.46l-1.8.72c-.7.26-1.47-.03-1.81-.65L2.2 15.53c-.35-.66-.2-1.44.36-1.88l1.53-1.19c-.01-.15-.02-.3-.02-.46 0-.15.01-.31.02-.46l-1.52-1.19c-.59-.45-.74-1.26-.37-1.88l1.85-3.19c.34-.62 1.11-.9 1.79-.63l1.81.73c.26-.17.52-.32.78-.46l.27-1.91c.09-.7.71-1.25 1.44-1.25h3.7c.74 0 1.36.54 1.45 1.27l.27 1.89c.27.14.53.29.79.46l1.8-.72c.71-.26 1.48.03 1.82.65l1.84 3.18c.36.66.2 1.44-.36 1.88l-1.52 1.19c.01.15.02.3.02.46s-.01.31-.02.46l1.52 1.19c.56.45.72 1.23.37 1.86l-1.86 3.22c-.34.62-1.11.9-1.8.63l-1.8-.72c-.26.17-.52.32-.78.46l-.27 1.91c-.1.68-.72 1.22-1.46 1.22zm-3.23-2h2.76l.37-2.55.53-.22c.44-.18.88-.44 1.34-.78l.45-.34 2.38.96 1.38-2.4-2.03-1.58.07-.56c.03-.26.06-.51.06-.78s-.03-.53-.06-.78l-.07-.56 2.03-1.58-1.39-2.4-2.39.96-.45-.35c-.42-.32-.87-.58-1.33-.77l-.52-.22-.37-2.55h-2.76l-.37 2.55-.53.21c-.44.19-.88.44-1.34.79l-.45.33-2.38-.95-1.39 2.39 2.03 1.58-.07.56a7 7 0 0 0-.06.79c0 .26.02.53.06.78l.07.56-2.03 1.58 1.38 2.4 2.39-.96.45.35c.43.33.86.58 1.33.77l.53.22.38 2.55z">
+                        <svg style="width: 100%; height: 100%;" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24">
+                            <path fill="#5f6368"
+                                d="M13.85 22.25h-3.7c-.74 0-1.36-.54-1.45-1.27l-.27-1.89c-.27-.14-.53-.29-.79-.46l-1.8.72c-.7.26-1.47-.03-1.81-.65L2.2 15.53c-.35-.66-.2-1.44.36-1.88l1.53-1.19c-.01-.15-.02-.3-.02-.46 0-.15.01-.31.02-.46l-1.52-1.19c-.59-.45-.74-1.26-.37-1.88l1.85-3.19c.34-.62 1.11-.9 1.79-.63l1.81.73c.26-.17.52-.32.78-.46l.27-1.91c.09-.7.71-1.25 1.44-1.25h3.7c.74 0 1.36.54 1.45 1.27l.27 1.89c.27.14.53.29.79.46l1.8-.72c.71-.26 1.48.03 1.82.65l1.84 3.18c.36.66.2 1.44-.36 1.88l-1.52 1.19c.01.15.02.3.02.46s-.01.31-.02.46l1.52 1.19c.56.45.72 1.23.37 1.86l-1.86 3.22c-.34.62-1.11.9-1.8.63l-1.8-.72c-.26.17-.52.32-.78.46l-.27 1.91c-.1.68-.72 1.22-1.46 1.22zm-3.23-2h2.76l.37-2.55.53-.22c.44-.18.88-.44 1.34-.78l.45-.34 2.38.96 1.38-2.4-2.03-1.58.07-.56c.03-.26.06-.51.06-.78s-.03-.53-.06-.78l-.07-.56 2.03-1.58-1.39-2.4-2.39.96-.45-.35c-.42-.32-.87-.58-1.33-.77l-.52-.22-.37-2.55h-2.76l-.37 2.55-.53.21c-.44.19-.88.44-1.34.79l-.45.33-2.38-.95-1.39 2.39 2.03 1.58-.07.56a7 7 0 0 0-.06.79c0 .26.02.53.06.78l.07.56-2.03 1.58 1.38 2.4 2.39-.96.45.35c.43.33.86.58 1.33.77l.53.22.38 2.55z">
                             </path>
                             <circle fill="#5f6368" cx="12" cy="12" r="3.5"></circle>
                         </svg>
@@ -286,20 +310,22 @@
                     <div
                         style="width: 48px; height: 48px; padding: 4px; display: flex; align-items: center; justify-content: center;">
                         <svg style="width: 24px; height: 24px;" focusable="false" viewBox="0 0 24 24">
-                            <path fill="#5f6368" d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z">
+                            <path fill="#5f6368"
+                                d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z">
                             </path>
                         </svg>
                     </div>
                     <div style="margin: 0 8px; border: 1px;  width: 80px; height: 36px; background: #1a73e8; display: flex; justify-content: center; align-items: center;
                     border: 1px solid transparent; border-radius: 4px;">
-                        <a href="http://127.0.0.1:5500/%EA%B3%BC%EC%A0%9C1/google_login.html" style="color: white; font: 13px/27px Roboto, Arial, sans-serif; text-decoration: none; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;">
+                        <a href="http://127.0.0.1:5500/%EA%B3%BC%EC%A0%9C1/google_login.html"
+                            style="color: white; font: 13px/27px Roboto, Arial, sans-serif; text-decoration: none; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;">
                             로그인
                         </a>
 
                     </div>
                 </div>
             </div>
-            
+
         </div>
 
         <div class="tool1">
@@ -441,29 +467,39 @@
     </div>
     <script>
         const searchbox = document.querySelector(".searchbox")
-        const srchval = document.querySelector("#srchval")
         const searchbtn = document.querySelector("#searchbtn")
-
         let srchvalval = localStorage.getItem(localStorage.key(0))
         let srchvaltxt = document.createTextNode(srchvalval)
-
-        searchbox.value=localStorage.getItem(localStorage.key(0))
+        searchbox.value = srchvalval
         document.querySelector("em").appendChild(srchvaltxt)
-        searchbox.addEventListener("keydown", function(e){
-            if(e.keyCode == 13){
+
+        if (searchbox.value == "크롬" || searchbox.value == "zmfha") {
+            document.querySelector('.main').innerHTML = '<div><span style="margin-bottom: 6px; margin-right: 8px; font-size: 14px; font-weight: bold;">스폰서</span><div><div style="display: inline-flex; align-items: center;"><div style="width: 28px; height: 28px; margin-top: 6px; margin-right: 12px; display: flex; justify-content: center; align-items: center; margin-bottom: 34px;"><svg fill="#0060f0" style="width: 18px; height: 18px;" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"></path></svg></div><a id="chrome_homepage_move" style="text-decoration: none; display: inline;" href="chrome_homepage.html"><div><div style="font-size: 14px; color: black;">google.co.kr</div><div style="font-size: 12px; color: #4D5156;">https://www.google.co.kr › chrome › 브라우저</div></div><div id="chrome_tag_hover_underline">Chrome - 지금 Chrome 다운로드</div></a></div></div><div style="margin-top: 4px; font-size: 14px;"><span style="font-size: 14px; font-weight: 800; line-height: 1.58; font-family: Apple SD Gothic Neo,arial,sans-serif;">Chrome</span>으로 데스크톱이나 휴대전화 어디서나 인터넷 세상을 탐색하세요. 사용자 안전을 고려한 설계. 맞춤 테마와 확장 프로그램. 모든 기기, 단일 브라우저. 자동 완성으로 입력 최소화.</div></div> '
+        }
+
+        document.querySelector('#chrome_homepage_move').addEventListener("mouseover", function(){
+                document.querySelector('#chrome_tag_hover_underline').style = "text-decoration: underline;"
+                this.style = "text-decoration: none;"
+        })
+        document.querySelector('#chrome_homepage_move').addEventListener("mouseout", function(){
+                document.querySelector('#chrome_tag_hover_underline').style = ""
+        })
+
+
+        searchbox.addEventListener("keydown", function (e) {
+            if (e.keyCode == 13 && searchbox.value != "") {
                 localStorage.setItem("search_value", searchbox.value)
                 location.reload()
             }
         })
-        
-        searchbtn.addEventListener("click", function(e){
-            if(searchbox.value != ""){
+
+        searchbtn.addEventListener("click", function (e) {
+            if (searchbox.value != "") {
                 localStorage.setItem("search_value", searchbox.value)
-                searchbox.value = ""
-                location.href="http://127.0.0.1:5500/%EA%B3%BC%EC%A0%9C1/google_search.html"
+                location.reload()
             }
         })
-        
+
     </script>
 </body>
 
